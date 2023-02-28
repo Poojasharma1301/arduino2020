@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-compatible" content="ie=edge">
+
+<!--bootstrap css file -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!--font-awesome-->
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="icon" href="data:,">
+<!--google-font-->
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+<!--custom css-->
+<link rel="stylesheet" href="cs/style.css">
+<title>Train Machine Mind</title>
+</head>
+<body>
+
+<!--navbar start-->  
+<nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top"> 
+    <a href="#" class="navbar-brand">
+        <img src="images/logo.png" width="50px" height="50px">Train Machine Mind</a>
+    <span class="navbar-text"> With ME</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mymenu">
+   <span class="navbar-toggler-icon" ></span>
+   </button>
+
+    </nav>
+    <!--navbar close -->
+
+<!--start my projects-->
+
+<div class="container pt-5" id=project>
+    <h2 class="text-center pt-5 text-info">Hardware Projects</h2>
+
+    <!--first row--> 
+    <div class="row mt-4">
+    <div class="col-lg-4 mb-3"><img src="https://www.innominds.com/hs-fs/hubfs/Innominds-201612/img/IM%20Inner%20Pages/ANPR/what-is-anpr.png?width=462&name=what-is-anpr.png" class="img-fluid"></div>
+    <div class="col-lg-8"><h2 class="text-center">Automatic Number Plate Recognition</h2>
+           <h5>Details :</h5>Automatic Number Plate Recognition is a system that detects the Number Written on the Vehicle Plates . 
+           First Collect the different Vehicle Number Plate dataset . I use numberplate_haarcade.xml for detection of the Plate so that we can Crop it 
+           and train our neural network for Digits Recognition . Perform Some operations on a 
+           Crop plate so that we separate out the digits by box and then train our neural network for 30 epochs . Accuracy of the model is 93 % .
+               <h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p>
+    </div>
+    </div>
+    <!--end first row-->
+
+    <!--second row--> 
+    <div class="row">
+    <div class="col-lg-9"><h2 class="text-center">Captcha Recognition</h2>
+            <h5>Details :</h5>First I Collect the train dataset which contains the image with the label of captcha so that our model learn from the data then 
+            collect saparate test data for testing the model . We have numbers and alphabets both in our captcha so assign some number to our alphabets
+             because training of the model is done on integer data . Apply input as an image to our neural 
+            network then Convolution layers , dense layers , MaxPooling and also define CTC layer . Train the model for 25 epochs and got accuracy as 96% .
+            <h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p>
+        </div>
+        <div class="col-lg-3 mb-4"><img src="data:image/jpeg;base64,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" class="img-fluid"></div>
+</div>
+<!--end second row-->
+
+    <!--Third row-->
+     <div class="row mt-4">
+        <div class="col-lg-3 mb-3"><img src="https://www.venasolutions.co.uk/hubfs/Forecasting%20to%20Better%20Align_Blog%20Header_1200x700.jpg" class="img-fluid"></div>
+        <div class="col-lg-9"><h2 class="text-center">Sales Forecasting Webapp</h2>
+       <h5>Details :</h5>We have an dataset of First and second Month sales then we have to forecast for the third month sale .
+        I build an Machine Learning algorithm for train our model for prediction then convert it into an User friendly Webapp and deployment is 
+        done on heroku platform.
+           <h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p>
+        </div>
+</div>
+<!--end Third row-->
+
+<!--Fourth row--> <div class="row">
+    <div class="col-lg-8"><h2 class="text-center">Airlines Fare Prediction Webapp</h2>
+        <h5>Details :</h5>1.Data Exploration : I started exploring dataset using pandas,numpy,matplotlib and seaborn.Data visualization : 
+        Ploted graphs to get insights about dependend and independed variables.Feature Engineering : Removed missing values and created new features as per insights.
+        Model Selection I : Tested all base models to check the base accuracy.Also ploted residual plot to check whether a model is a good fit or not.
+        Model Selection II : Performed Hyperparameter tuning using gridsearchCV and randomizedSearchCV.Pickle File : Selected model as per best accuracy and created pickle file using joblib .
+        Webpage & deployment : Created a webform that takes all the necessary inputs from user and shows output.
+        After that I have deployed project on heroku platform.
+          
+          <h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p>
+        </div>
+    <div class="col-lg-4 mb-3"><img src="https://wallpaperaccess.com/full/3919865.jpg" class="img-fluid"></div>
+</div><!--end Fourth row-->
+
+<!--Five row--> 
+<div class="row mt-4">
+<div class="col-lg-4 mb-3"><img src="https://wallpaperaccess.com/full/2008503.jpg" class="img-fluid"></div>
+<div class="col-lg-8"><h2 class="text-center">Speech Emotions Detection</h2>
+<h5>Details :</h5> Speech Emotion Recognition, abbreviated as SER, is the act of attempting to recognize human emotion and 
+affective states from speech. This is capitalizing on the fact that voice often reflects underlying emotion through tone and pitch. This is also the phenomenon 
+that animals like dogs and horses employ to be able to understand human emotion.
+<h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p>
+</div>
+</div>
+<!--end Five row-->
+
+<!--six row--> 
+     <div class="row">
+            <div class="col-lg-9"><h2 class="text-center">Campus Placement Portal</h2>
+                <h5>Details :</h5>
+                An User Friendly Campus Placement Prediction Portal where you can give the required input and check that you are placed or not . 
+                Steps Follow for solving this problem :
+                1. Import the Necessary libraries 
+                2. Import the dataset 
+                3. Data cleaning 
+                4. Removing Outliers 
+                5.Data Analysis
+                5. Model selection
+                6. Testing Model 
+                <h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p>
+            </div>
+            <div class="col-lg-3 mb-4"><img src="https://www.infomance.com/wp-content/uploads/2020/07/campus-placement-500x500-1.png" class="img-fluid"></div>
+    </div><!--end six row-->
+
+    <!--Seven row--> 
+    <div class="row mt-4">
+            <div class="col-lg-3 mb-3"><img src="data:image/jpeg;base64,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" class="img-fluid"></div>
+            <div class="col-lg-9"><h2 class="text-center">Covid-19 Testing Using X-ray</h2>
+           <h5>Details :</h5>Here I use two different file for dataset first is for Covid-19 Positive X-Rays and second one is 
+           Covid-19 Negative X-Rays then I create a merge dataset for Analysis and Prediction.
+           Libraries Used:
+           1.Pandas
+           2.Numpy
+           3.OS
+           4.CV2
+           5.Sklearn
+           .Deep Learning Model:
+           Build an Convolutional Neural Network for Prediction.
+           Model Deployment
+           heroku
+           
+            <h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p>
+            </div>
+    </div>
+    <!--end Seven row-->
+    
+    <!--Eight row--> 
+    <div class="row">
+        <div class="col-lg-9"><h2 class="text-center">YouTube Spam detection Webapp</h2>
+            <h5>Details :</h5>Steps Follow for solving this problem :-A Web Application integrated with Machine Learning to classify YouTube Comments 
+            as Spam or Not-Spam.Combination of 5 youtube video comments for train our model.
+            1.Importing all Neccesary Libraries,
+            2.Importing the Dataset,
+            3.Spliting dataset into train and test dataset,
+            4.Tokenizing comments in training set and applying TF-IDF vectorizer on training set,
+            5.Training the multinomial Naive Bayes model,
+            6.Generate predictions on test set,
+            7.Generate model performance metrics,
+            8.Deploy the model.
+              
+              <h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p></div>
+        <div class="col-lg-3 mb-3"><img src="https://appliedmachinelearning.files.wordpress.com/2017/01/spam-filter.png" class="img-fluid"></div>
+    <!--end Eight row--></div>
+    
+    <!--Nine row-->
+     <div class="row mt-4">
+    <div class="col-lg-3 mb-3"><img src="https://images.theconversation.com/files/284418/original/file-20190717-173334-1b9vdud.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" class="img-fluid"></div>
+    <div class="col-lg-9"><h2 class="text-center">Fake news detection</h2>
+    <h5>Details :</h5> By using machine learning techniques analyse the fake and true news take separate data from kaggle as a fake or true news then 
+    concat the dataset and made a single data then perform ML algorithms to solve the problem . Machine Learning Model : 
+    1.Random forest classifier ,
+    2.Linear regression ,
+    3.logistic regression, 
+    4.DecisionTree Classifier, 
+    5. XGboost.
+    <h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p>
+    </div>
+    </div><!--end Nine row-->
+    
+         <!--Ten row--> <div class="row">
+                <div class="col-lg-9"><h2 class="text-center">Password Strength ML Model</h2>
+                    <h5>Details :</h5>
+                    In this Project we can check that the entered password strength is week , medium or strong . Use a train data where huge amount of password is given which is strong ,
+                     medium or week then we apply this model to our new dataset to predict the password strength.
+                    1. Import the Necessary libraries ,
+                    2. Import the dataset ,
+                    3. Data cleaning ,
+                    4. Removing Outliers ,
+                    5.Data Analysis,
+                    5. Model selection,
+                    6. Testing Model .
+                    <h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p></div>
+                <div class="col-lg-3 mb-4"><img src="https://thecleverprogrammer.com/wp-content/uploads/2022/08/Password-Strength-Checker-with-Machine-Learning.png" class="img-fluid"></div>
+        </div><!--end Ten row-->
+    
+        <!--Eleven row--> <div class="row mt-4">
+                <div class="col-lg-3 mb-3"><img src="https://s16353.pcdn.co/wp-content/uploads/2018/06/Churn.png" class="img-fluid"></div>
+                <div class="col-lg-9"><h2 class="text-center">Customer Churn Prediction Webapp</h2>
+               <h5>Details :</h5>In this project I took the kaggle data for customer attrition or train an machine learning model for Prediction 
+               of the customer Churn and use this machine learning model to develop a webapp using flask framework so that we save company time
+                to find out whether the customer will leave the company or not according to the customer details .
+               
+                <h5>Technologies Used: </h5><p>Python ,Sklearn , Flask , Html , Css , Pandas, Numpy , Database , Hosting </p>
+                </div>
+        </div>
+        <!--end Eleven row-->
+        </div>
+    <!--end my projects-->
+
+
+    <!--footer-->
+    <footer class="container-fluid bg-dark text-white mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div><span>Developed By Pooja Sharma</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+
+<!--jquery,proper.js,bootstrap.js files-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
