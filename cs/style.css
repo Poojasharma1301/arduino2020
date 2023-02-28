@@ -1,0 +1,66 @@
+/* make image responsive*/
+.back-image{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    border-radius: opx;
+    margin-top: 74px;
+
+     
+}
+/*navbar font*/
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+     font-size: 2em;
+    font-weight: bold;}
+
+.footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(92, 178, 194);
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+
+      * {
+        /* Change your font family */
+        font-family: sans-serif;
+    }
+    
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 1100px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .content-table thead tr {
+        background-color: #68e0e4;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .content-table th,
+    .content-table td {
+        padding: 12px 15px;
+        text-align: left;
+    }
+    
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #82d6ce;
+    }
+    
